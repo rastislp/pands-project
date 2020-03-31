@@ -9,6 +9,12 @@ A sepal (/ˈsɛpəl/ or /ˈsiːpəl/) is a part of the flower of angiosperms (fl
 
 ![feature extraxtion](https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/90604043_10217753213596066_4742260450224242688_n.jpg?_nc_cat=108&_nc_sid=e007fa&_nc_oc=AQl04voN31mICTnqOfwfAhYkC4XL1-qDnO_dJgbpkh8yz0Cz11hX8nhXVgSazaGWbVQ&_nc_ht=scontent-lht6-1.xx&oh=43266b8962d0ce95163244bb2f7db6bb&oe=5EA9ACF2)
 
+Main key points about dataset:
+* main data strucure is 4 columns and 150 rows
+* name of those columns are as follow sepal length, sepal width, petal length, petal width.
+* in addition there is another column "species" that categorize and name given data
+* categories represent 3 flowers: Iris setosa, Iris Verginica, Iris versicolor.
+* all types of data are distributed equaly between 3 flowers.
 
 ![feature extraxtion](https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/91468972_10217815209665929_8933676484149641216_n.jpg?_nc_cat=105&_nc_sid=e007fa&_nc_oc=AQmr6mVjQHv7SBT2QOlEzavgI1v9Nh22RwV-Cy7DrSS6WTiF-EI2wsPGGBnVN_kR2iw&_nc_ht=scontent-lht6-1.xx&oh=78a6a86028353a770a33e5f755e7276b&oe=5EA87ED9)
 
