@@ -36,7 +36,6 @@ Main key points about dataset:
 
 
 ### Required libraries
-[ go back to the top ]
 
 
 This project uses several Python packages that come standard with the Anaconda Python distribution. The primary libraries that we'll be using are:
