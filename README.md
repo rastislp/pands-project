@@ -1,12 +1,3 @@
-```javascript
-function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:'#foo'})
-  }
-}
-```
-
-
 
 # pands-project
 Final project
@@ -57,7 +48,12 @@ This project uses several Python packages that come standard with the Anaconda P
 * matplotlib: Basic plotting library in Python; most other Python plotting libraries are built on top of it.
 * Seaborn: Advanced statistical plotting library.
 
+```javascript
+import pandas as pd
 
+iris_data = pd.read_csv('iris-data.csv')
+iris_data.head()
+```
 
 
 
