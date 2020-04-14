@@ -1,3 +1,13 @@
+```javascript
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```
+
+
+
 # pands-project
 Final project
 
