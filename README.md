@@ -1,7 +1,8 @@
+<p align="center">
 ![Gmit logo](https://github.com/rastislp/pands-project/blob/master/Images/GMIT.jpg)
 
 Rastislav Petras g00252861
-
+</p>
 
 
 # pands-project
