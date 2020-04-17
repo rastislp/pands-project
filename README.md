@@ -1,7 +1,6 @@
 <p align="center">
 <img src= https://github.com/rastislp/pands-project/blob/master/Images/GMIT.jpg > <br>
-
-        <b>Rastislav Petras g00252861</b>
+<h3 align="center">Rastislav Petras g00252861</h3>
 </p>
 
 
