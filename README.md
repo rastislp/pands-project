@@ -69,5 +69,6 @@ iris_data.head()
 
 ## Reference:
 
-En.wikipedia.org. 2020. Petal. [online] Available at: <https://en.wikipedia.org/wiki/Petal> [Accessed 15 March 2020].
-En.wikipedia.org. 2020. Sepal. [online] Available at: <https://en.wikipedia.org/wiki/Sepal> [Accessed 15 March 2020].
+En.wikipedia.org. 2020. Petal. [online] Available at: <https://en.wikipedia.org/wiki/Petal> [Accessed 15 March 2020].<br>
+En.wikipedia.org. 2020. Sepal. [online] Available at: <https://en.wikipedia.org/wiki/Sepal> [Accessed 15 March 2020].<br>
+En.wikipedia.org. 2020. The Iris flower. [online] Available at: https://en.wikipedia.org/wiki/Iris_flower_data_set.<br>
