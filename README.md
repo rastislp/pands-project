@@ -4,8 +4,9 @@
 </p>
 
 
-# pands-project
-Final project
+<h3 align="center">Programming and Scripting </h3>
+<h3 align="center">Iris data set </h3>
+
 
 ## Insight into Iris 
 Petals are modified leaves that surround the reproductive parts of flowers. They are often brightly coloured or unusually shaped to attract pollinators. Together, all of the petals of a flower are called a corolla(Petal, 2020).
