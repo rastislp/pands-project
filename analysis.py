@@ -16,16 +16,16 @@ def display_menu():                         # funcion Menu
     print("")
     print("MENU")
     print("=" * 4)
-    print("1 - Display Sepal length histogram")
-    print("2 - Display Sepal width histogram")
-    print("3 - Display Petal length histogram")
-    print("4 - Display Petal width histogram")
-    print("5 - Display Boxplot")
-    print("6 - Display distribution of sepal length")
-    print("7 - Display distribution of sepal width")
-    print("8 - Display distribution of petal length")
-    print("9 - Display distribution of petal width")
-    print("10 - ")
+    print(" 1 - Display Sepal length histogram")
+    print(" 2 - Display Sepal width histogram")
+    print(" 3 - Display Petal length histogram")
+    print(" 4 - Display Petal width histogram")
+    print(" 5 - Display Boxplot")
+    print(" 6 - Display distribution of sepal length")
+    print(" 7 - Display distribution of sepal width")
+    print(" 8 - Display distribution of petal length")
+    print(" 9 - Display distribution of petal width")
+    print("10 - Display scatter plot")
     print("11 - Google")
 
 
@@ -105,22 +105,27 @@ plt.clf()
  
 sns.violinplot(data=df, x='species', y='sepal_length')  # shows the distribution of quantitative data across several levels of one (or more) categorical variables such that those distributions can be compared.
 plt.title("Distribution of sepal lenght")
-plt.savefig("violin_plot_sepal_length")
+plt.savefig("violin_plot_sepal_length.png")
 plt.clf()  
 
 sns.violinplot(data=df, x='species', y='sepal_width')
 plt.title("Distribution of sepal width")
-plt.savefig("violin_plot_sepal_width")
+plt.savefig("violin_plot_sepal_width.png")
 plt.clf()  
 
 sns.violinplot(data=df, x='species', y='petal_length')
 plt.title("Distribution of petal lenght")
-plt.savefig("violin_plot_petal_length")
+plt.savefig("violin_plot_petal_length.png")
 plt.clf()  
 
 sns.violinplot(data=df, x='species', y='petal_width')
 plt.title("Distribution of petal width")
-plt.savefig("violin_plot_petal_width")
+plt.savefig("violin_plot_petal_width.png")
+plt.clf()  
+
+sns.pairplot(df, hue="species")
+plt.title("Scatterplot Matrix")
+plt.savefig("scatter_plot.png")
 plt.clf()  
 
 
@@ -157,7 +162,7 @@ while True:
 		web.open('https://github.com/rastislp/pands-project/blob/master/violin_plot_petal_width.png')
 		
 	elif(choice == "10"):
-		web.open('')
+		web.open('https://github.com/rastislp/pands-project/blob/master/scatter_plot.png')
 		
 	elif(choice == "11"):
 		web.open('https://google.com')	
