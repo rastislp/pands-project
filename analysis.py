@@ -1,10 +1,6 @@
-# IPython log file
-
-import pandas as pd                         # open source data analysis and manipulation tool, built on top of the Python programming language
-
-import seaborn as sns                       # data visualization library based on matplotlib.
-
-# IPython log file
+# Rastislav Petras G00252861
+# Programming and Scripting
+# Iris data set project
 
 import pandas as pd                         # open source data analysis and manipulation tool, built on top of the Python programming language
 
@@ -16,7 +12,7 @@ import numpy as np                          # fundamental package for scientific
 
 import webbrowser as web
 
-def display_menu():                                 # funcion Menu 
+def display_menu():                         # funcion Menu 
     print("")
     print("MENU")
     print("=" * 4)
@@ -46,7 +42,7 @@ print()
 print("Column and row structure")
 print()
 print(df.shape)   
-print()                          # function to display data strucure count of rows and columns
+print()                       			    # function to display data strucure count of rows and columns
 print("Below is a species distibution:")
 print()
 print(df.groupby('species').size())         # count of rows grouped by spieces 
@@ -55,6 +51,20 @@ print("Below is describe function of data:")
 print()
 print(df.describe())                        # used to view some basic statistical details like percentile, mean, std etc. of a data frame or a series of numeric values
 print()
+print("Mean value for each individual specie of each type dimension: ")
+print()
+print(df.groupby('species').mean())
+print()
+print("Min value for each individual specie of each type dimension: ")
+print()
+print(df.groupby('species').min())
+print()
+print("Max value for each individual specie of each type dimension: ")
+print()
+print(df.groupby('species').max())
+print()
+
+
 print("Dont forget to check folder for histograms and scatter plots. ")
 print("https://github.com/rastislp/pands-project.git")
 print()
@@ -93,7 +103,7 @@ df.boxplot(by= 'species', grid=True)        # boxplot is a graph with a good ind
 plt.savefig("Boxplot_group_by_species.png")
 plt.clf()  
  
-sns.violinplot(data=df, x='species', y='sepal_length')
+sns.violinplot(data=df, x='species', y='sepal_length')  # shows the distribution of quantitative data across several levels of one (or more) categorical variables such that those distributions can be compared.
 plt.title("Distribution of sepal lenght")
 plt.savefig("violin_plot_sepal_length")
 plt.clf()  
