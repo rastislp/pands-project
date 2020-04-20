@@ -26,6 +26,7 @@ def display_menu():
     print("4 - Display Petal width histogram")
     print("5 - Display Boxplot")
     print("6 - Exit")
+    print()
 
 
 df = sns.load_dataset("iris")               # download iris data set from seaborn library
@@ -89,22 +90,27 @@ display_menu()
 while True:
 	choice = input("Enter choice: ")
 		
-	if  (choice == "1"):
-		web.open('https://github.com/rastislp/pands-project/blob/master/sepal_length_histogram.png')
+	if(choice == "1"):
+	    web.open('https://github.com/rastislp/pands-project/blob/master/sepal_length_histogram.png')
         
-	elif (choice == "2"):
+	elif(choice == "2"):
 		web.open('https://github.com/rastislp/pands-project/blob/master/sepal_width_histogram.png')
 
-	elif (choice == "3"):
+	elif(choice == "3"):
+	    web.open('https://github.com/rastislp/pands-project/blob/master/petal_length_histogram.png')
+
+	elif(choice == "4"):
+		web.open('https://github.com/rastislp/pands-project/blob/master/petal_width_histogram.png')
+		
+	elif(choice == "5"):
 		web.open('https://github.com/rastislp/pands-project/blob/master/petal_length_histogram.png')
-
-    #elif (choice == "4"):
-	#	web.open('https://github.com/rastislp/pands-project/blob/master/sepal_width_histogram.png')
-
-	#elif (choice == "5"):
-	#	web.open('https://github.com/rastislp/pands-project/blob/master/petal_length_histogram.png')    
+		
+	elif(choice == "6"):
+		web.open('https://github.com/rastislp/pands-project/blob/master/petal_length_histogram.png')
+		
+	elif(choice == "7"):
+		web.open('https://github.com/rastislp/pands-project/blob/master/petal_length_histogram.png')
    
-	#else:
-	#	display_menu()
-
+	else:
+		display_menu()
 #def urlopen():
