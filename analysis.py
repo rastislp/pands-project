@@ -81,7 +81,7 @@ plt.savefig("petal_width_histogram.png")
 plt.clf()
 
 df.boxplot(by= 'species', grid=True)        # boxplot is a graph with a good indication of how the values in the data are spread out.
-plt.savefig("Boxplot group by species.png")
+plt.savefig("Boxplot_group_by_species.png")
 plt.clf()  
  
 
@@ -103,13 +103,13 @@ while True:
 		web.open('https://github.com/rastislp/pands-project/blob/master/petal_width_histogram.png')
 		
 	elif(choice == "5"):
-		web.open('https://github.com/rastislp/pands-project/blob/master/petal_length_histogram.png')
+		web.open('https://github.com/rastislp/pands-project/blob/master/Boxplot_group_by_species.png')
 		
 	elif(choice == "6"):
-		web.open('https://github.com/rastislp/pands-project/blob/master/petal_length_histogram.png')
+		web.open('https://google.com')
 		
 	elif(choice == "7"):
-		web.open('https://github.com/rastislp/pands-project/blob/master/petal_length_histogram.png')
+		break;
    
 	else:
 		display_menu()
