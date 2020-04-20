@@ -8,6 +8,20 @@ import matplotlib.pyplot as plt             # comprehensive library for creating
 
 import numpy as np                          # fundamental package for scientific computing with Python.
 
+import webbrowser as web
+
+def display_menu():
+    print("")
+    print("MENU")
+    print("=" * 4)
+    print("1 - Display Sepal length histogram")
+    print("2 - Display Sepal width histogram")
+    print("3 - Display Petal length histogram")
+    print("4 - Display Petal width histogram")
+    print("5 - Display Boxplot")
+    print("6 - Exit")
+
+
 df = sns.load_dataset("iris")               # download iris data set from seaborn library
 print()
 print()
@@ -63,3 +77,31 @@ df.boxplot(by= 'species', grid=True)        # boxplot is a graph with a good ind
 plt.savefig("Boxplot group by species.png")
 plt.clf()  
  
+
+display_menu()
+	
+while True:
+	choice = input("Enter choice: ")
+		
+	if  (choice == "1"):
+		web.open('https://github.com/rastislp/pands-project/blob/master/sepal_length_histogram.png')
+        
+	elif (choice == "2"):
+		web.open('https://github.com/rastislp/pands-project/blob/master/sepal_width_histogram.png')
+
+	elif (choice == "3"):
+		web.open('https://github.com/rastislp/pands-project/blob/master/petal_length_histogram.png')
+
+    elif (choice == "4"):
+		web.open('https://github.com/rastislp/pands-project/blob/master/sepal_width_histogram.png')
+
+	elif (choice == "5"):
+		web.open('https://github.com/rastislp/pands-project/blob/master/petal_length_histogram.png')    
+   
+	else:
+		display_menu()
+
+#def urlopen():
+   
+    
+

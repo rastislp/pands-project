@@ -8,6 +8,19 @@ import matplotlib.pyplot as plt             # comprehensive library for creating
 
 import numpy as np                          # fundamental package for scientific computing with Python.
 
+def display_menu():
+    print("")
+    print("MENU")
+    print("=" * 4)
+    print("1 - Display Sepal length histogram")
+    print("2 - Display Sepal width histogram")
+    print("3 - Display Boxplot")
+    print("4 - Exit")
+
+if __name__ == "__main__":
+	# execute only if run as a script 
+	main()
+
 df = sns.load_dataset("iris")               # download iris data set from seaborn library
 print()
 print()
@@ -63,3 +76,19 @@ df.boxplot(by= 'species', grid=True)        # boxplot is a graph with a good ind
 plt.savefig("Boxplot group by species.png")
 plt.clf()  
  
+
+display_menu()
+	
+while True:
+	choice = input("Enter choice: ")
+		
+	if (choice == "1"):
+		start https://github.com/rastislp/pands-project/blob/master/petal_length_histogram.png
+	elif (choice == "2"):
+		start https://github.com/rastislp/pands-project/blob/master/petal_length_histogram.png
+	elif (choice == "3"):
+		start https://github.com/rastislp/pands-project/blob/master/petal_length_histogram.png
+	elif (choice == "4"):
+		break;
+	else:
+		display_menu()
