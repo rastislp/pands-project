@@ -26,11 +26,16 @@ def display_menu():                         # funcion Menu
     print(" 8 - Display distribution of petal length")
     print(" 9 - Display distribution of petal width")
     print("10 - Display scatter plot")
-    print("11 - Google")
-
-
+    print("a - About")
     print("q - Exit")
     print()
+
+def about_menu():
+	print("")
+	print("Press y to explore Iris data set:")
+	print("Press anything else to exit to main menu")
+	print()
+
 
 
 df = sns.load_dataset("iris")               # download iris data set from seaborn library
@@ -124,7 +129,6 @@ plt.savefig("violin_plot_petal_width.png")
 plt.clf()  
 
 sns.pairplot(df, hue="species")
-plt.title("Scatterplot Matrix")
 plt.savefig("scatter_plot.png")
 plt.clf()  
 
@@ -164,11 +168,33 @@ while True:
 	elif(choice == "10"):
 		web.open('https://github.com/rastislp/pands-project/blob/master/scatter_plot.png')
 		
-	elif(choice == "11"):
-		web.open('https://google.com')	
+	elif(choice == "a"):
+		print()
+		print(" This program Analysis.py is written by Rastislav Petras. Student of Higher Diploma in Data Analytics at GMIT.")
+		print("The Iris flower data set or Fisher's Iris data set is a multivariate data set introduced by the British statistician")
+		print("and biologist Ronald Fisher in his 1936 paper The use of multiple measurements in taxonomic problems as an example of ")
+		print("linear discriminant analysis. It is sometimes called Anderson's Iris data set because Edgar Anderson collected the data")
+		print("to quantify the morphologic variation of Iris flowers of three related species. Two of the three species were collected in")
+		print("the Gaspé Peninsula all from the same pasture, and picked on the same day and measured at the same time by the same person")
+		print("with the same apparatus.")
+		print()
+		about_menu()
+		print()
+		while True:
+			about = input("Select one: ")
+		
+			if(about == "y"):
+	        		web.open('https://en.wikipedia.org/wiki/Iris_flower_data_set')
+	        		display_menu()
+	        		break
+			else:
+				display_menu()	
+				break
+		
+
     
 		
-	elif(choice == "q"):            # when 7 is pressed aplication will exit
+	elif(choice == "q"):            # when q is pressed aplication will exit
 		break
    
 	else:
