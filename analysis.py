@@ -1,3 +1,5 @@
+
+
 # Rastislav Petras G00252861
 # Programming and Scripting
 # Iris data set project
@@ -132,6 +134,37 @@ sns.pairplot(df, hue="species")
 plt.savefig("scatter_plot.png")
 plt.clf()  
 
+with open("analysis.txt", "w") as f:
+    print("Below is a species distibution:",file=f)
+    print(" ",file=f)
+    print(df.groupby('species').size(),file=f)
+    print(" ",file=f)
+    print("Mean value for each individual specie of each type dimension",file=f) 
+    print(" ",file=f) 
+    print(df.groupby('species').mean(),file=f)
+    print(" ",file=f)
+    print("Min value for each individual specie of each type dimension",file=f)
+    print(" ",file=f)
+    print(df.groupby('species').min(),file=f)
+    print(" ",file=f)
+    print("Max value for each individual specie of each type dimension",file=f)
+    print(" ",file=f)
+    print(df.groupby('species').max(),file=f)
+    print(" ",file=f)
+    print("Below is describe function of data:",file=f)
+    print(" ",file=f)
+    print(df.head(5), file=f)
+    print(" ",file=f)
+    print("Column and row structure",file=f)
+    print(" ",file=f)
+    print(df.shape, file=f)
+    print(" ",file=f)
+    print("Below is describe function of data:",file=f)
+    print(" ",file=f)
+    print(df.describe(), file=f)
+    print(" ",file=f)
+    f.write("thats it")
+    f.close()
 
 display_menu()
 
