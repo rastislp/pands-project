@@ -16,7 +16,7 @@ import numpy as np                          # fundamental package for scientific
 
 import webbrowser as web
 
-def display_menu():
+def display_menu():                                 # funcion Menu 
     print("")
     print("MENU")
     print("=" * 4)
@@ -25,11 +25,20 @@ def display_menu():
     print("3 - Display Petal length histogram")
     print("4 - Display Petal width histogram")
     print("5 - Display Boxplot")
-    print("6 - Exit")
+    print("6 - Display distribution of sepal length")
+    print("7 - Display distribution of sepal width")
+    print("8 - Display distribution of petal length")
+    print("9 - Display distribution of petal width")
+    print("10 - ")
+    print("11 - Google")
+
+
+    print("q - Exit")
     print()
 
 
 df = sns.load_dataset("iris")               # download iris data set from seaborn library
+
 print()
 print()
 print("                         Welcome in Iris data sets analysis:")
@@ -84,9 +93,29 @@ df.boxplot(by= 'species', grid=True)        # boxplot is a graph with a good ind
 plt.savefig("Boxplot_group_by_species.png")
 plt.clf()  
  
+sns.violinplot(data=df, x='species', y='sepal_length')
+plt.title("Distribution of sepal lenght")
+plt.savefig("violin_plot_sepal_length")
+plt.clf()  
+
+sns.violinplot(data=df, x='species', y='sepal_width')
+plt.title("Distribution of sepal width")
+plt.savefig("violin_plot_sepal_width")
+plt.clf()  
+
+sns.violinplot(data=df, x='species', y='petal_length')
+plt.title("Distribution of petal lenght")
+plt.savefig("violin_plot_petal_length")
+plt.clf()  
+
+sns.violinplot(data=df, x='species', y='petal_width')
+plt.title("Distribution of petal width")
+plt.savefig("violin_plot_petal_width")
+plt.clf()  
+
 
 display_menu()
-	
+
 while True:
 	choice = input("Enter choice: ")
 		
@@ -106,10 +135,26 @@ while True:
 		web.open('https://github.com/rastislp/pands-project/blob/master/Boxplot_group_by_species.png')
 		
 	elif(choice == "6"):
-		web.open('https://google.com')
+		web.open('https://github.com/rastislp/pands-project/blob/master/violin_plot_sepal_length.png')
 		
 	elif(choice == "7"):
-		break;
+		web.open('https://github.com/rastislp/pands-project/blob/master/violin_plot_sepal_width.png')
+
+	elif(choice == "8"):
+	    web.open('https://github.com/rastislp/pands-project/blob/master/violin_plot_petal_length.png')
+
+	elif(choice == "9"):
+		web.open('https://github.com/rastislp/pands-project/blob/master/violin_plot_petal_width.png')
+		
+	elif(choice == "10"):
+		web.open('')
+		
+	elif(choice == "11"):
+		web.open('https://google.com')	
+    
+		
+	elif(choice == "q"):            # when 7 is pressed aplication will exit
+		break
    
 	else:
 		display_menu()
