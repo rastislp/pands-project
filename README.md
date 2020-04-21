@@ -93,7 +93,8 @@ Function to display data strucure count of rows and columns.
 ```javascript
 print(df.shape)   
 ```
-
+<p align="center">
+<img src= https://github.com/rastislp/pands-project/blob/master/Images/shape.png > <br></p>
 ### Species distibution
 
 Count of rows grouped by spieces
@@ -101,6 +102,9 @@ Count of rows grouped by spieces
 ```javascript
 print(df.groupby('species').size())
 ```
+<p align="center">
+<img src= https://github.com/rastislp/pands-project/blob/master/Images/species.png > <br></p>
+
 ### Describe 
 
 Used to view some basic statistical details like percentile, mean, std etc. of a data frame or a series of numeric values.
@@ -108,6 +112,9 @@ Used to view some basic statistical details like percentile, mean, std etc. of a
 ```javascript
 print(df.describe())  
 ```
+<p align="center">
+<img src= https://github.com/rastislp/pands-project/blob/master/Images/describe.png > <br></p>
+
 ### Mean
 
 Mean value for each individual specie of each type dimension.
@@ -115,6 +122,9 @@ Mean value for each individual specie of each type dimension.
 ```javascript
 print(df.groupby('species').mean())	
 ```
+<p align="center">
+<img src= https://github.com/rastislp/pands-project/blob/master/Images/mean.png > <br></p>
+
 ### Min
 
 Min value for each individual specie of each type dimension.
@@ -122,6 +132,9 @@ Min value for each individual specie of each type dimension.
 ```javascript
 print(df.groupby('species').min())
 ```
+<p align="center">
+<img src= https://github.com/rastislp/pands-project/blob/master/Images/min.png > <br></p>
+
 ### Max
 
 Max value for each individual specie of each type dimension.
@@ -130,6 +143,10 @@ Max value for each individual specie of each type dimension.
 print("Max value for each individual specie of each type dimension: ")
 print(df.groupby('species').max())
 ```
+
+<p align="center">
+<img src= https://github.com/rastislp/pands-project/blob/master/Images/max.png > <br></p>
+
             sepal_length  sepal_width  petal_length  petal_width
 species
 setosa               5.8          4.4           1.9          0.6
