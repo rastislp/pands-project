@@ -130,6 +130,12 @@ Max value for each individual specie of each type dimension.
 print("Max value for each individual specie of each type dimension: ")
 print(df.groupby('species').max())
 ```
+            sepal_length  sepal_width  petal_length  petal_width
+species
+setosa               5.8          4.4           1.9          0.6
+versicolor           7.0          3.4           5.1          1.8
+virginica            7.9          3.8           6.9          2.5
+
 ### Histograms
 
 ```javascript
@@ -214,6 +220,9 @@ sns.pairplot(df, hue="species")
 plt.savefig("scatter_plot.png")
 plt.clf() 
 ```
+<p align="center">
+<img src= https://github.com/rastislp/pands-project/blob/master/scatter_plot.png > <br></p>
+
 ## Reference:
 
 En.wikipedia.org. 2020. Petal. [online] Available at: <https://en.wikipedia.org/wiki/Petal> [Accessed 15 March 2020].<br>
