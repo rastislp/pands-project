@@ -161,12 +161,18 @@ plt.ylabel("Number of flowers")
 plt.savefig("petal_width_histogram.png")
 plt.clf()
 ```
+### Boxplot
+
+Boxplot is a graph with a good indication of how the values in the data are spread out.
 
 ```javascript
 df.boxplot(by= 'species', grid=True)        
 plt.savefig("Boxplot_group_by_species.png")
 plt.clf()
 ```
+### Violinplot
+
+Shows the distribution of quantitative data across several levels of one (or more) categorical variables such that those distributions can be compared.
 
 ```javascript
 sns.violinplot(data=df, x='species', y='sepal_length')  
@@ -189,6 +195,9 @@ plt.title("Distribution of petal width")
 plt.savefig("violin_plot_petal_width.png")
 plt.clf()  
 ```
+### Pairplot Matrix
+
+Seaborn function library to plot matrix of 16 plots.
 
 ```javascript
 sns.pairplot(df, hue="species")       					
