@@ -49,6 +49,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt       
 import webbrowser as web					    
 ```
+### Some program menu functions
 
 ```javascript
 def display_menu():                      
@@ -70,12 +71,16 @@ def display_menu():
     print()		    
     
 def about_menu():							
-  	print("")
-  	print("Press y to explore Iris data set:")
-	  print("Press anything else to exit to main menu")
-	  print()    
+    print("")
+    print("Press y to explore Iris data set:")
+    print("Press anything else to exit to main menu")
+    print()    
 ```
 
+
+```javascript
+df = sns.load_dataset("iris") 
+```
 
 
 ![feature extraxtion](https://scontent-lhr8-1.xx.fbcdn.net/v/t1.0-9/91276582_10217815209705930_9016744201081061376_n.jpg?_nc_cat=101&_nc_sid=e007fa&_nc_oc=AQnG_0VONpHMqam7IAkkUj3F71W8EVH1-ITXJ0I42gUXnBTxiR9C9GwNBXeZmc_YIgc&_nc_ht=scontent-lhr8-1.xx&oh=48b5597e7b948b7f31783d51732c199c&oe=5EA9011B)
