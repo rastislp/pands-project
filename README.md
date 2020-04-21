@@ -31,7 +31,8 @@ Main key points about dataset:
 
 <h3 align="center">Some of excel data strucure analysis prior python deployment  </h3>
 
-![feature extraxtion](https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/91468972_10217815209665929_8933676484149641216_n.jpg?_nc_cat=105&_nc_sid=e007fa&_nc_oc=AQmr6mVjQHv7SBT2QOlEzavgI1v9Nh22RwV-Cy7DrSS6WTiF-EI2wsPGGBnVN_kR2iw&_nc_ht=scontent-lht6-1.xx&oh=78a6a86028353a770a33e5f755e7276b&oe=5EA87ED9)
+<p align="center">
+<img src=https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/91468972_10217815209665929_8933676484149641216_n.jpg?_nc_cat=105&_nc_sid=e007fa&_nc_oc=AQmr6mVjQHv7SBT2QOlEzavgI1v9Nh22RwV-Cy7DrSS6WTiF-EI2wsPGGBnVN_kR2iw&_nc_ht=scontent-lht6-1.xx&oh=78a6a86028353a770a33e5f755e7276b&oe=5EA87ED9> </p>
 
 
 ### Required libraries
