@@ -45,10 +45,9 @@ This project uses several Python packages that come standard with the Anaconda P
 * webbrowser: module provides a high-level interface to allow displaying Web-based documents to users
 
 ```javascript
-import pandas as pd
-
-iris_data = pd.read_csv('iris-data.csv')
-iris_data.head()
+import seaborn as sns                       # data visualization library based on matplotlib.
+import matplotlib.pyplot as plt             # comprehensive library for creating static, animated, and interactive visualizations 
+import webbrowser as web					# module provides a high-level interface to allow displaying Web-based documents to users. 
 ```
 
 
