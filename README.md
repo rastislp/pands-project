@@ -147,11 +147,6 @@ print(df.groupby('species').max())
 <p align="center">
 <img src= https://github.com/rastislp/pands-project/blob/master/Images/max.png > <br></p>
 
-            sepal_length  sepal_width  petal_length  petal_width
-species
-setosa               5.8          4.4           1.9          0.6
-versicolor           7.0          3.4           5.1          1.8
-virginica            7.9          3.8           6.9          2.5
 
 ### Histograms
 
