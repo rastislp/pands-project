@@ -12,11 +12,11 @@ import matplotlib.pyplot as plt             # comprehensive library for creating
 
 import numpy as np                          # fundamental package for scientific computing with Python.
 
-import webbrowser as web
+import webbrowser as web					# module provides a high-level interface to allow displaying Web-based documents to users. 
 
 def display_menu():                         # funcion Menu 
     print("")
-    print("MENU")
+    print("MENU")							# print menu option
     print("=" * 4)
     print(" 1 - Display Sepal length histogram")
     print(" 2 - Display Sepal width histogram")
@@ -32,7 +32,7 @@ def display_menu():                         # funcion Menu
     print("q - Exit")
     print()
 
-def about_menu():
+def about_menu():							# fuction to call submenu
 	print("")
 	print("Press y to explore Iris data set:")
 	print("Press anything else to exit to main menu")
@@ -60,15 +60,15 @@ print(df.describe())                        # used to view some basic statistica
 print()
 print("Mean value for each individual specie of each type dimension: ")
 print()
-print(df.groupby('species').mean())
+print(df.groupby('species').mean())			# display mean value for each individual specie for each type dimension:
 print()
 print("Min value for each individual specie of each type dimension: ")
 print()
-print(df.groupby('species').min())
+print(df.groupby('species').min())			# display mein value for each individual specie for each type dimension:
 print()
 print("Max value for each individual specie of each type dimension: ")
 print()
-print(df.groupby('species').max())
+print(df.groupby('species').max())			# display mmax value for each individual specie for each type dimension:
 print()
 
 
@@ -130,12 +130,12 @@ plt.title("Distribution of petal width")
 plt.savefig("violin_plot_petal_width.png")
 plt.clf()  
 
-sns.pairplot(df, hue="species")
+sns.pairplot(df, hue="species")       					# pairplot - seaborn function library to plot matrix of 16 plots
 plt.savefig("scatter_plot.png")
 plt.clf()  
 
-with open("analysis.txt", "w") as f:
-    print("Below is a species distibution:",file=f)
+with open("analysis.txt", "w") as f:					# function to create and overwrite a analysis.txt with defined content	
+    print("Below is a species distibution:",file=f)     # Print and save line in analysis.txt
     print(" ",file=f)
     print(df.groupby('species').size(),file=f)
     print(" ",file=f)
@@ -163,19 +163,19 @@ with open("analysis.txt", "w") as f:
     print(" ",file=f)
     print(df.describe(), file=f)
     print(" ",file=f)
-    f.write("thats it")
-    f.close()
+    f.write("thats it!")
+    f.close()  			# close a file
 
-display_menu()
+display_menu()    		# calll menu function 
 
-while True:
-	choice = input("Enter choice: ")
+while True:                            # while  statement 
+	choice = input("Enter choice: ")   # wait for input from keyboard and store it in variable choice
 		
-	if(choice == "1"):
-	    web.open('https://github.com/rastislp/pands-project/blob/master/sepal_length_histogram.png')
+	if(choice == "1"):				   # if choice equals to 1
+	    web.open('https://github.com/rastislp/pands-project/blob/master/sepal_length_histogram.png') #open a url
         
 	elif(choice == "2"):
-		web.open('https://github.com/rastislp/pands-project/blob/master/sepal_width_histogram.png')
+		web.open('https://github.com/rastislp/pands-project/blob/master/sepal_width_histogram.png')  # else if 
 
 	elif(choice == "3"):
 	    web.open('https://github.com/rastislp/pands-project/blob/master/petal_length_histogram.png')
@@ -219,7 +219,7 @@ while True:
 			if(about == "y"):
 	        		web.open('https://en.wikipedia.org/wiki/Iris_flower_data_set')
 	        		display_menu()
-	        		break
+	        		break			# exit while statement
 			else:
 				display_menu()	
 				break
