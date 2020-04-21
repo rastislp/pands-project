@@ -95,6 +95,7 @@ print(df.shape)
 ```
 <p align="center">
 <img src= https://github.com/rastislp/pands-project/blob/master/Images/shape.png > <br></p>
+
 ### Species distibution
 
 Count of rows grouped by spieces
