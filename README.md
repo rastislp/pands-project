@@ -161,6 +161,10 @@ plt.ylabel("Number of flowers")
 plt.savefig("petal_width_histogram.png")
 plt.clf()
 ```
+
+<p align="center">
+<img src= https://github.com/rastislp/pands-project/blob/master/Images/histogram.png > <br></p>
+
 ### Boxplot
 
 Boxplot is a graph with a good indication of how the values in the data are spread out.
@@ -170,6 +174,9 @@ df.boxplot(by= 'species', grid=True)
 plt.savefig("Boxplot_group_by_species.png")
 plt.clf()
 ```
+<p align="center">
+<img src= https://github.com/rastislp/pands-project/blob/master/Boxplot_group_by_species.png > <br></p>
+
 ### Violinplot
 
 Shows the distribution of quantitative data across several levels of one (or more) categorical variables such that those distributions can be compared.
@@ -195,6 +202,9 @@ plt.title("Distribution of petal width")
 plt.savefig("violin_plot_petal_width.png")
 plt.clf()  
 ```
+<p align="center">
+<img src= https://github.com/rastislp/pands-project/blob/master/Images/violin.png > <br></p>
+
 ### Pairplot Matrix
 
 Seaborn function library to plot matrix of 16 plots.
