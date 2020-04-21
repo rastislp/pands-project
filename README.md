@@ -86,36 +86,51 @@ Load_dataset function library load Iris data set within a seaborn library a stor
 ```javascript
 df = sns.load_dataset("iris") 
 ```
+### Column and row structure
+
+Function to display data strucure count of rows and columns.
 
 ```javascript
-print("Column and row structure")
 print(df.shape)   
 ```
 
+### Species distibution
+
+Count of rows grouped by spieces
+
 ```javascript
-print("Below is a species distibution:")
 print(df.groupby('species').size())
 ```
+### Describe 
+
+Used to view some basic statistical details like percentile, mean, std etc. of a data frame or a series of numeric values.
 
 ```javascript
-print("Below is describe function of data:")
 print(df.describe())  
 ```
+### Mean
+
+Mean value for each individual specie of each type dimension.
 
 ```javascript
-print("Mean value for each individual specie of each type dimension: ")
 print(df.groupby('species').mean())	
 ```
+### Min
+
+Min value for each individual specie of each type dimension.
 
 ```javascript
-print("Min value for each individual specie of each type dimension: ")
 print(df.groupby('species').min())
 ```
+### Max
+
+Max value for each individual specie of each type dimension.
 
 ```javascript
 print("Max value for each individual specie of each type dimension: ")
 print(df.groupby('species').max())
 ```
+### Histograms
 
 ```javascript
 plt.hist(df["sepal_length"], color="red")   
