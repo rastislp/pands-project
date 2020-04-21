@@ -235,6 +235,11 @@ plt.clf()
 <p align="center">
 <img src= https://github.com/rastislp/pands-project/blob/master/scatter_plot.png > <br></p>
 
+## Summary
+
+While unveiling a data structure by studying a rows and columns of Iris data set I have a noticed obvious patterns "range" of data. However data structure or histogram would not project clear picture of what flower may looks like. From other hand violin plot and   
+seaborn scatter plot brings projecton of data structure to more understandable format for human kind.
+
 ## Reference:
 
 En.wikipedia.org. 2020. Petal. [online] Available at: <https://en.wikipedia.org/wiki/Petal> [Accessed 15 March 2020].<br>
