@@ -87,9 +87,99 @@ Load_dataset function library load Iris data set within a seaborn library a stor
 df = sns.load_dataset("iris") 
 ```
 
+```javascript
+print("Column and row structure")
+print(df.shape)   
+```
 
-![feature extraxtion](https://scontent-lhr8-1.xx.fbcdn.net/v/t1.0-9/91276582_10217815209705930_9016744201081061376_n.jpg?_nc_cat=101&_nc_sid=e007fa&_nc_oc=AQnG_0VONpHMqam7IAkkUj3F71W8EVH1-ITXJ0I42gUXnBTxiR9C9GwNBXeZmc_YIgc&_nc_ht=scontent-lhr8-1.xx&oh=48b5597e7b948b7f31783d51732c199c&oe=5EA9011B)
+```javascript
+print("Below is a species distibution:")
+print(df.groupby('species').size())
+```
 
+```javascript
+print("Below is describe function of data:")
+print(df.describe())  
+```
+
+```javascript
+print("Mean value for each individual specie of each type dimension: ")
+print(df.groupby('species').mean())	
+```
+
+```javascript
+print("Min value for each individual specie of each type dimension: ")
+print(df.groupby('species').min())
+```
+
+```javascript
+print("Max value for each individual specie of each type dimension: ")
+print(df.groupby('species').max())
+```
+
+```javascript
+plt.hist(df["sepal_length"], color="red")   
+plt.title("sepal length")                    
+plt.xlabel("length (cm)")                   
+plt.ylabel("Number of flowers")             
+plt.savefig("sepal_length_histogram.png")   
+plt.clf()                                   
+
+plt.hist(df["sepal_width"], color="green")
+plt.title("sepal width")
+plt.xlabel("width (cm)")
+plt.ylabel("Number of flowers")
+plt.savefig("sepal_width_histogram.png")
+plt.clf()
+
+plt.hist(df["petal_length"], color="orange")
+plt.title("petal length")
+plt.xlabel("length (cm)")
+plt.ylabel("Number of flowers")
+plt.savefig("petal_length_histogram.png")
+plt.clf()
+
+plt.hist(df["petal_width"], color="blue")
+plt.title("petal width")
+plt.xlabel("width (cm)")
+plt.ylabel("Number of flowers")
+plt.savefig("petal_width_histogram.png")
+plt.clf()
+```
+
+```javascript
+df.boxplot(by= 'species', grid=True)        
+plt.savefig("Boxplot_group_by_species.png")
+plt.clf()
+```
+
+```javascript
+sns.violinplot(data=df, x='species', y='sepal_length')  
+plt.title("Distribution of sepal lenght")
+plt.savefig("violin_plot_sepal_length.png")
+plt.clf()  
+
+sns.violinplot(data=df, x='species', y='sepal_width')
+plt.title("Distribution of sepal width")
+plt.savefig("violin_plot_sepal_width.png")
+plt.clf()  
+
+sns.violinplot(data=df, x='species', y='petal_length')
+plt.title("Distribution of petal lenght")
+plt.savefig("violin_plot_petal_length.png")
+plt.clf()  
+
+sns.violinplot(data=df, x='species', y='petal_width')
+plt.title("Distribution of petal width")
+plt.savefig("violin_plot_petal_width.png")
+plt.clf()  
+```
+
+```javascript
+sns.pairplot(df, hue="species")       					
+plt.savefig("scatter_plot.png")
+plt.clf() 
+```
 ## Reference:
 
 En.wikipedia.org. 2020. Petal. [online] Available at: <https://en.wikipedia.org/wiki/Petal> [Accessed 15 March 2020].<br>
