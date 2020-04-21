@@ -4,13 +4,9 @@
 # Programming and Scripting
 # Iris data set project
 
-import pandas as pd                         # open source data analysis and manipulation tool, built on top of the Python programming language
-
 import seaborn as sns                       # data visualization library based on matplotlib.
 
 import matplotlib.pyplot as plt             # comprehensive library for creating static, animated, and interactive visualizations in Python
-
-import numpy as np                          # fundamental package for scientific computing with Python.
 
 import webbrowser as web					# module provides a high-level interface to allow displaying Web-based documents to users. 
 
