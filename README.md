@@ -16,9 +16,11 @@ Petals are modified leaves that surround the reproductive parts of flowers. They
 
 A sepal (/ˈsɛpəl/ or /ˈsiːpəl/) is a part of the flower of angiosperms (flowering plants). Usually green, sepals typically function as protection for the flower in bud, and often as support for the petals when in bloom (Sepal, 2020).
 
-![feature extraxtion](https://scontent-lhr8-1.xx.fbcdn.net/v/t1.0-9/91546695_10217815430031438_6635654391338631168_n.jpg?_nc_cat=109&_nc_sid=e007fa&_nc_oc=AQlGEa9PB17-jqYLO8hLQebdGO7efA26cl7sKxnYgns_IZFlVAI-35GzICcFA9ZM_qs&_nc_ht=scontent-lhr8-1.xx&oh=d3e6753ac73d8e3801d73fa3c890b8ac&oe=5EAA39E1)
+<p align="center">
+<img src=https://scontent-lhr8-1.xx.fbcdn.net/v/t1.0-9/91546695_10217815430031438_6635654391338631168_n.jpg?_nc_cat=109&_nc_sid=e007fa&_nc_oc=AQlGEa9PB17-jqYLO8hLQebdGO7efA26cl7sKxnYgns_IZFlVAI-35GzICcFA9ZM_qs&_nc_ht=scontent-lhr8-1.xx&oh=d3e6753ac73d8e3801d73fa3c890b8ac&oe=5EAA39E1> </p>
 
-![feature extraxtion](https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/90604043_10217753213596066_4742260450224242688_n.jpg?_nc_cat=108&_nc_sid=e007fa&_nc_oc=AQl04voN31mICTnqOfwfAhYkC4XL1-qDnO_dJgbpkh8yz0Cz11hX8nhXVgSazaGWbVQ&_nc_ht=scontent-lht6-1.xx&oh=43266b8962d0ce95163244bb2f7db6bb&oe=5EA9ACF2)
+<p align="center">
+<img src=https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/90604043_10217753213596066_4742260450224242688_n.jpg?_nc_cat=108&_nc_sid=e007fa&_nc_oc=AQl04voN31mICTnqOfwfAhYkC4XL1-qDnO_dJgbpkh8yz0Cz11hX8nhXVgSazaGWbVQ&_nc_ht=scontent-lht6-1.xx&oh=43266b8962d0ce95163244bb2f7db6bb&oe=5EA9ACF2> </p>
 
 Main key points about dataset:
 * main data strucure is 4 columns and 150 rows
