@@ -49,7 +49,10 @@ import seaborn as sns
 import matplotlib.pyplot as plt       
 import webbrowser as web					    
 ```
-### Some program menu functions
+### Program menu and submenu functions
+
+These are special features of analysis program. Selecting between numbers 1-10 would open a selected plot via webbrowser.
+Option "a" will opens a submenu while option "q" will terminate application.
 
 ```javascript
 def display_menu():                      
@@ -76,7 +79,9 @@ def about_menu():
     print("Press anything else to exit to main menu")
     print()    
 ```
+### Load dataset
 
+Load_dataset function library load Iris data set within a seaborn library a store them as variable df.
 
 ```javascript
 df = sns.load_dataset("iris") 
