@@ -240,3 +240,7 @@ plt.clf()
 En.wikipedia.org. 2020. Petal. [online] Available at: <https://en.wikipedia.org/wiki/Petal> [Accessed 15 March 2020].<br>
 En.wikipedia.org. 2020. Sepal. [online] Available at: <https://en.wikipedia.org/wiki/Sepal> [Accessed 15 March 2020].<br>
 En.wikipedia.org. 2020. The Iris flower. [online] Available at: https://en.wikipedia.org/wiki/Iris_flower_data_set [Accessed 19 April 2020].<br>
+* https://guides.github.com/features/mastering-markdown/
+* https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
+* https://matplotlib.org/
+* https://seaborn.pydata.org/
