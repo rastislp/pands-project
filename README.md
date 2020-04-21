@@ -45,10 +45,37 @@ This project uses several Python packages that come standard with the Anaconda P
 * webbrowser: module provides a high-level interface to allow displaying Web-based documents to users
 
 ```javascript
-import seaborn as sns                       # data visualization library based on matplotlib.
-import matplotlib.pyplot as plt             # comprehensive library for creating static, animated, and interactive visualizations 
-import webbrowser as web					# module provides a high-level interface to allow displaying Web-based documents to users. 
+import seaborn as sns                 
+import matplotlib.pyplot as plt       
+import webbrowser as web					    
 ```
+
+```javascript
+def display_menu():                      
+    print("")
+    print("MENU")							
+    print("=" * 4)
+    print(" 1 - Display Sepal length histogram")
+    print(" 2 - Display Sepal width histogram")
+    print(" 3 - Display Petal length histogram")
+    print(" 4 - Display Petal width histogram")
+    print(" 5 - Display Boxplot")
+    print(" 6 - Display distribution of sepal length")
+    print(" 7 - Display distribution of sepal width")
+    print(" 8 - Display distribution of petal length")
+    print(" 9 - Display distribution of petal width")
+    print("10 - Display scatter plot")
+    print("a - About")
+    print("q - Exit")
+    print()		    
+    
+def about_menu():							
+  	print("")
+  	print("Press y to explore Iris data set:")
+	  print("Press anything else to exit to main menu")
+	  print()    
+```
+
 
 
 ![feature extraxtion](https://scontent-lhr8-1.xx.fbcdn.net/v/t1.0-9/91276582_10217815209705930_9016744201081061376_n.jpg?_nc_cat=101&_nc_sid=e007fa&_nc_oc=AQnG_0VONpHMqam7IAkkUj3F71W8EVH1-ITXJ0I42gUXnBTxiR9C9GwNBXeZmc_YIgc&_nc_ht=scontent-lhr8-1.xx&oh=48b5597e7b948b7f31783d51732c199c&oe=5EA9011B)
